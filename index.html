@@ -2,11 +2,40 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Title of the document</title>
+<title>LOGIN</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-Content of the document......
+
+<form name="login" class="login-box">
+<h1>Login</h1>
+<div class="textbox"><i class="fas fa-user"></i>
+<input name="usuario" type="text" id="usuario" placeholder="Ingresa Usuario" autofocus="" required="" class="email" class="textbox">
+</div>
+<div class="textbox">
+    <i class="fas fa-lock"></i>
+<input name="contrasenia" type="password" id="contrasenia" placeholder="Ingresa Password" required="" class="textbox">
+</div>
+<p>
+<input type="submit"class="btn" id="submit" onclick="check(this.form)" value="Login"/">
+</p>
+
+</form>
+<script language="javascript">
+function check(form)
+{
+ if(form.usuario.value == form.contrasenia.value)
+  {
+    alert("Ingresaste pasaste Desarrollo de Plataformas")
+  }
+ else
+ {
+   alert("Error CONTRASEÑA O USUARIO")
+  }
+}
+</script>
 </body>
+
 
 </html>
